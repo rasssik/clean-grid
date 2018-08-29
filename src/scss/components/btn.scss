@@ -1,0 +1,338 @@
+// buttons
+//------------------------------------------------------
+.btn {
+	@extend %btn-flex;
+}
+
+.btn-default {
+	width: 100%;
+	min-height: 44px;
+	border-radius: 4px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	border-radius: 4px;
+	border: 1px solid #e7e7eb;
+	color: #ffffff;
+	font-size: 15px;
+	font-weight: 400;
+	justify-content: center;
+	color: $site-color; // @include transition;
+	max-width: 128px;
+	min-width: 128px;
+	background-color: #fff;
+	flex: 0 0 auto;
+	text-align: center;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+	&:hover {
+		background-color: $site-color;
+		color: #fff;
+		border-color: $site-color;
+	}
+	@include media("<lg") {
+		max-width: 128px;
+		min-height: 44px;
+	}
+}
+
+.btn-color-border {
+	width: 100%;
+	min-height: 44px;
+	border-radius: 4px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	border-radius: 4px;
+	border: 1px solid #ffffff;
+	color: #ffffff;
+	font-size: 15px;
+	font-weight: 400;
+	justify-content: center;
+	@include transition;
+	max-width: 60px;
+	flex: 0 0 auto;
+	text-align: center;
+	background-color: $site-color;
+	&:hover {
+		background-color: #fff;
+		color: #fff;
+		color: $site-color;
+	}
+	@include media("<lg") {
+		max-width: 128px;
+		min-height: 44px;
+	}
+}
+
+.btn-default-color {
+	min-height: 44px;
+	border-radius: 4px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	border-radius: 4px;
+	color: #ffffff;
+	font-size: 15px;
+	font-weight: 400;
+	justify-content: center;
+	text-align: center; // @include transition;
+	max-width: 170px;
+	width: 100%;
+	text-align: center;
+	background-color: $site-color;
+	-webkit-transition: background-color 500ms linear;
+	-moz-transition: background-color 500ms linear;
+	-o-transition: background-color 500ms linear;
+	-ms-transition: background-color 500ms linear;
+	transition: background-color 500ms linear;
+	&:hover {
+		// background-color: $site-color-light;
+		background-color: lighten($site-color, 3%);
+
+
+	}
+	@include media("<lg") {
+		max-width: 128px;
+		min-height: 44px;
+	}
+	
+}
+
+.btn-menu {
+	// position: absolute;
+	// right: 5px;
+	// top: 5px;
+	/* color: white; */
+	margin-right: 16px;
+	cursor: pointer;
+	span {
+		width: 20px;
+		height: 2px;
+		background: $site-color;
+		display: block;
+		@include transition;
+	}
+	span+span {
+		margin-top: 5px;
+	}
+	@include media(">lg") {
+		display: none;
+	}
+}
+
+.btn-link {
+	padding-left: 16px;
+	padding-right: 12px;
+	max-width: 160px;
+	white-space: nowrap;
+	.icon {
+		margin-right: 12px;
+	}
+} // radio button
+label input[type=radio] {
+	display: none;
+}
+
+.delete.icon {
+	background: url('../img/close.svg') center no-repeat;
+	width: 9px;
+	height: 9px;
+	color: $default-text-color;
+	margin-left: 5px;
+	background-size: contain;
+}
+
+.radio-btn {
+	padding-left: 0;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	&__title {
+		color: $default-text-color;
+		font-size: 16px;
+		font-weight: 400;
+	}
+	.icon {
+		width: 18px;
+		height: 18px;
+		border: 1px solid #e1dfe2;
+		flex: 0 0 auto;
+		border-radius: 50%;
+		margin-right: 14px;
+		position: relative;
+	}
+	[type=radio]:checked+.icon+.radio-btn__title {
+		color: $site-color;
+	}
+	[type=radio]:checked+.icon:before {
+		width: 8px;
+		height: 8px;
+		background-color: $site-color;
+		border-radius: 50%;
+		margin: auto;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		content: "";
+	}
+} // checkbox
+.checkbox-wrap input[type=checkbox] {
+	display: none;
+}
+
+.checkbox-wrap .icon {
+	display: inline-block;
+	position: relative;
+	width: 24px;
+	height: 24px;
+	border-radius: 4px;
+	border: 1px solid #e1dfe2;
+	vertical-align: middle;
+	flex: 0 0 auto; // margin-right: 9px;
+	// margin-top: -1px;
+	&:before {
+		@include center;
+	}
+}
+
+[type=checkbox]:checked+.icon:before,
+[type=checkbox][value=true]+.icon:before {
+	content: "";
+	position: absolute;
+	display: block;
+	background: url('../img/done.svg') center no-repeat;
+	width: 12px;
+	height: 8px;
+	color: $site-color;
+}
+
+.checkbox-wrap {
+	display: flex;
+	align-items: center;
+}
+
+.checkbox__title {
+	color: #7c8490;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 14px;
+	margin-left: 7px;
+	@include transition;
+} // fixed buttons
+.f-action {
+	position: fixed;
+	right: 12px;
+	bottom: 10%;
+	z-index: 10;
+	&__btn {
+		width: 54px;
+		height: 54px;
+		box-shadow: 0 2px 4px rgba(39, 52, 92, 0.5);
+		border-radius: 50%;
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 16px;
+		@include transition;
+		&--add-task {
+			background-color: #fff;
+			color: $site-color;
+			&:hover {
+				color: #fff;
+				background-color: $site-color;
+			}
+		}
+		&--add-task-color {
+			background-color: $site-color;
+			color: #fff;
+			&:hover {
+				color: #fff;
+				background-color: $site-color-light;
+			}
+		}
+		&--notification {
+			background-color: $site-color;
+			color: #fff;
+			font-size: 17px;
+			&:hover {
+				background-color: $site-color-light;
+			}
+		}
+		&.is-hidden {
+			// display: none;
+		}
+	}
+	@include media(">=lg") {
+		display: none;
+	}
+}
+
+.btn-toogle-filter {
+	position: fixed;
+	width: 54px;
+	height: 54px;
+	box-shadow: 0 2px 4px rgba(39, 52, 92, 0.5);
+	background-color: $site-color;
+	border-radius: 50%;
+	overflow: hidden;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	right: 18px;
+	bottom: 10%;
+	-webkit-transition: background-color 500ms linear;
+	-moz-transition: background-color 500ms linear;
+	-o-transition: background-color 500ms linear;
+	-ms-transition: background-color 500ms linear;
+	transition: background-color 500ms linear;
+	z-index: 10; // @include transition;
+	&:hover {
+		background-color: $site-color-light;
+	}
+	&.is-hidden {
+		display: none;
+	}
+	@include media(">lg") {
+		display: none;
+	}
+}
+
+button:disabled,
+button[disabled] {
+	background-color: #ccd1d8;
+	color: #fff;
+	&:hover {
+		background-color: #ccd1d8;
+		color: #fff;
+		cursor: no-drop;
+	}
+}
+
+.btn-full-width {
+	max-width: 100%;
+}
+
+.ui.popup {
+	padding: 10px;
+	.content {
+		font-size: 14px;
+	}
+}

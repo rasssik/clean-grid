@@ -1,0 +1,32 @@
+$root: "/";
+// $root : "/";
+// import standards
+//-----------------------------------------------------------------------------------
+@import "standards/mixins.scss";
+@import "standards/variables.scss";
+@import "standards/reset.scss";
+@import "standards/media.scss";
+@import "standards/grid.scss";
+@import "standards/common.scss";
+@import "standards/icon_default.scss";
+@import "standards/input-style.scss";
+// import plugins
+//-----------------------------------------------------------------------------------
+@import "plugins/slick.scss";
+@import "plugins/slick-theme.scss";
+@import "plugins/jquery.mCustomScrollbar.scss";
+@import "plugins/popup.scss";
+@import "plugins/datepicker.scss";
+@import "plugins/animate.scss";
+// import components
+//-----------------------------------------------------------------------------------
+@import "components/page.scss";
+@import "components/btn.scss";
+@import "components/popup.scss";
+@import "components/header.scss";
+@import "components/footer.scss";
+@import "components/sizing.scss";
+@import "components/pagination.scss";
+// import pages
+//-----------------------------------------------------------------------------------
+@import "pages/index.scss";

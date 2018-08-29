@@ -1,0 +1,30 @@
+// grid breakpoints
+$grid-breakpoints: ( xs:0, sm: 576px, md: 768px, lg: 992px, xl: 1280px);
+// grid containers
+$container-max-widths: ( sm: 540px, md: 720px, lg: 960px, xl: 1200px);
+// grid columns
+$grid-columns: 12 !default;
+$gutter: 30px !default;
+$gutter-xs: 12px !default;
+// font
+$SFPro: 'SF-Pro';
+$font-default: "Helvetica Neue",
+Helvetica,
+sans-serif;
+$body-font-size: 15px;
+// selection color
+// "../Fonts
+@include font-face("SF-Pro", "../fonts/SF-Pro-Display-Ultralight/SF-Pro-Display-Ultralight", normal, 200);
+@include font-face("SF-Pro", "../fonts/SF-Pro-Display-Thin/SF-Pro-Display-Thin", normal, 300);
+@include font-face("SF-Pro", "../fonts/SF-Pro-Display-Regular/SF-Pro-Display-Regular", normal, 400);
+@include font-face("SF-Pro", "../fonts/SF-Pro-Display-Medium/SF-Pro-Display-Medium", normal, 500);
+@include font-face("SF-Pro", "../fonts/SF-Pro-Display-Semibold/SF-Pro-Display-Semibold", normal, 600);
+@include font-face("SF-Pro", "../fonts/SF-Pro-Display-Bold/SF-Pro-Display-Bold", normal, 700);
+@include font-face("SF-Pro", "../fonts/SF-Pro-Display-Black/SF-Pro-Display-Black", normal, 900);
+//-----------------------------------------------------------------------------------
+$color-selection: dodgerblue;
+$default-text-color: #253242;
+$text-light: #8c9093;
+$accent-color: #0074e4;
+$site-color-light: #0f80ea;
+$site-color: #0078e8;

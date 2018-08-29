@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 13</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Contractor-Orders-List" transform="translate(-263.000000, -212.000000)" fill="#7C8490">
+            <g id="Group-13" transform="translate(265.000000, 214.000000)">
+                <path d="M7.51627604,4.95410156 L8.98111979,4.95410156 L8.86393229,9.68066406 L7.63346354,9.68066406 L7.51627604,4.95410156 Z M8.24869792,12.1220703 C7.80436198,12.1220703 7.45279948,11.7851562 7.45279948,11.3554688 C7.45279948,10.9257812 7.80436198,10.5888672 8.24869792,10.5888672 C8.69303385,10.5888672 9.04459635,10.9257812 9.04459635,11.3554688 C9.04459635,11.7851562 8.69303385,12.1220703 8.24869792,12.1220703 Z" id="!"></path>
+                <path d="M8,16 C12.418278,16 16,12.418278 16,8 C16,3.581722 12.418278,0 8,0 C3.581722,0 0,3.581722 0,8 C0,12.418278 3.581722,16 8,16 Z M8,18 C2.4771525,18 -2,13.5228475 -2,8 C-2,2.4771525 2.4771525,-2 8,-2 C13.5228475,-2 18,2.4771525 18,8 C18,13.5228475 13.5228475,18 8,18 Z" id="Oval-2" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>
